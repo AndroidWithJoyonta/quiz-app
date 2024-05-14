@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Quiz App</string>
+    <string name="total_quiction">Total Quiction</string>
+    <string name="question_name">this will be your quiction</string>
+    <string name="confirm">confirm</string>
+    <string name="science">Science</string>
+    <string name="math">Math</string>
+    <string name="logic">logic</string>
+    <string name="English">English</string>
+</resources>

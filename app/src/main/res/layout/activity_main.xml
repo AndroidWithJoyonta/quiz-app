@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".questionActivity1"
+    android:background="@color/background"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/total_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/total_quiction"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="20sp"
+        android:layout_margin="20sp"
+        android:background="@drawable/total_ques_bg"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/total_question"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="130dp"
+        >
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/question_name"
+        android:textColor="@color/white"
+        android:textSize="31sp"
+        android:textStyle="bold"
+
+        android:layout_marginStart="16dp"
+        />
+
+    <Button
+        android:id="@+id/ans_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ans A"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        android:textSize="26sp"
+        android:layout_marginTop="10dp"
+        />
+        <Button
+            android:id="@+id/ans_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ans b"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:layout_marginStart="16dp"
+            android:textSize="26sp"
+            android:layout_marginTop="10dp"
+            />
+        <Button
+            android:id="@+id/ans_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ans c"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:layout_marginStart="16dp"
+            android:textSize="26sp"
+            android:layout_marginTop="10dp"
+            />
+        <Button
+            android:id="@+id/ans_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ans D"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:layout_marginStart="16dp"
+            android:textSize="26sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20sp"
+            >
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/btn_color"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:onClick="loadAnswer"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/confirm"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
